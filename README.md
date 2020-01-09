@@ -2,7 +2,7 @@
 
 ## there is 3 vulnerabilities
 
-1. sql injection in `index.vuln.js` line `13`
+1. sql injection in `index.vuln.js` line `12`
 
 ```js
 connection.query("SELECT * FROM ITEMS WHERE ID=" + req.params.id,(err, result) => {
@@ -10,7 +10,7 @@ connection.query("SELECT * FROM ITEMS WHERE ID=" + req.params.id,(err, result) =
 });
 ```
 
-2. sql injection in `index.vuln.js` line `21`
+2. sql injection in `index.vuln.js` line `20`
 
 ```js
 let query = {
@@ -21,7 +21,7 @@ connection.query(query,(err, result) => {
 });
 ```
 
-2. sql injection in `index.vuln.js` line `25`
+2. sql injection in `index.vuln.js` line `24`
 
 ```js
 connection.query({
